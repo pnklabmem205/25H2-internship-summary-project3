@@ -161,6 +161,20 @@ git push origin main
 - `.gitattributes`에서 `eol=lf` 설정으로 통일
 - Windows/Mac/Linux 간 호환성 확보
 
+### 소유권 문제 (dubious ownership)
+**문제**: `fatal: detected dubious ownership in repository`
+- **원인**: p3 폴더 내부의 Git 저장소들이 다른 소유자로 인식됨
+- **해결**:
+  ```bash
+  # 안전한 디렉토리로 추가
+  git config --global --add safe.directory D:/takeover2601/p3/workout-counter-pc
+  git config --global --add safe.directory D:/takeover2601/p3/HEADPOSE
+  
+  # 또는 p3 폴더를 .gitignore에 추가하여 제외 (권장)
+  # .gitignore에 p3/ 추가
+  ```
+- **권장**: 가이드 문서만 관리하므로 p3 폴더는 제외하는 것이 좋습니다
+
 ---
 
 **작성일**: 2026-01-27  
