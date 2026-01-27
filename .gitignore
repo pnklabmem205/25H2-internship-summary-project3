@@ -1,0 +1,43 @@
+# Python 가상환경
+.venv/
+venv/
+env/
+ENV/
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MediaPipe 모델 파일 (용량이 큼)
+*.pt
+*.tflite
+*.pb
+
+# 로그 파일
+*.log
+
+# 빌드 파일
+build/
+dist/
+*.egg-info/
+
+# 프로젝트별 제외
+p3/workout-counter-pc/.venv/
+p3/HEADPOSE/*.pt
+
+# Cursor 설정 (선택적 - 포함하려면 주석 처리)
+# .cursor/
