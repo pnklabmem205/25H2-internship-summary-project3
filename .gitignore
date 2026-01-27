@@ -39,5 +39,8 @@ dist/
 p3/workout-counter-pc/.venv/
 p3/HEADPOSE/*.pt
 
+# p3 폴더는 별도 Git 저장소이므로 제외 (가이드 문서만 관리)
+p3/
+
 # Cursor 설정 (선택적 - 포함하려면 주석 처리)
 # .cursor/
